@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Nunito Sans Italic';
+    src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe0oMImSLYBIv1o4X1M8cce4E9lKdg.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Yeseva One';
+    src: url(https://fonts.gstatic.com/s/yesevaone/v20/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');
+}
