@@ -12,3 +12,78 @@
     font-family: 'Yeseva One';
     src: url(https://fonts.gstatic.com/s/yesevaone/v20/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans',Helvetica, Arial, sans-serif;
+}
+
+.haednav{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 6.39vw max-content 8.76vw max-content 7vw max-content 3.4vw max-content 1fr;
+    grid-template-rows: 12.1vh;
+    align-items: center;
+    background: #131313;
+    color: #fff;
+}
+
+.headname {
+    font-size: 0.69em;
+    text-transform: uppercase;
+    grid-column: 2 / 3;
+    color: #E3B873;
+}
+
+.headmenu {
+    display: inline;
+    grid-column: 4 / 5;
+}
+
+.headmenu > li {
+    display: inline-block;
+    font-size: 0.69em;
+    padding-left: 3.63vw;
+} 
+
+.headmenu > li:first-child {
+    padding-left: 0vw;
+}
+
+.headmenu-item {
+    text-decoration:none;
+    color: #fff;
+}
+
+.headmenu-item:hover {
+    color: #E3B873;
+
+}
+
+.headphone {
+    font-size: 0.69em;
+    grid-column: 6 / 7;
+    color: #E3B873;
+    text-decoration: underline; 
+}
+
+.headbutton{
+    width: 11.18vw;
+    height: 5.51vh;
+    grid-column: 8 / 9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E3B873;
+    border: 0;
+    border-radius: 2px;
+}
+
+.headbutton-name {
+    font-size: 0.86em;
+    font-style: italic;
+    text-transform: uppercase;
+}
