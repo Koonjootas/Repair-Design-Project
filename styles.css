@@ -10,21 +10,26 @@
 
 @font-face {
     font-family: 'Yeseva One';
-    src: url(https://fonts.gstatic.com/s/yesevaone/v20/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/yesevaone/v20/OpNJno4ck8vc-xYpwWWxliNVWyXD.woff2) format('woff2');
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body {
     font-family: 'Nunito Sans',Helvetica, Arial, sans-serif;
 }
-    
+
+/* Navigation */
 
 .headnav {
     display: grid;
     width: 100vw;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) 0.97vw;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-template-rows: minmax(57px, 83px);
     align-items: center;
     background: #131313;
@@ -32,27 +37,26 @@
 }
 
 .headnav__name {
-    padding-left: 6.29vw;
-    font-size: 0.72vw;
+    padding-left: 32%;
+    font-size: 69%;
     text-transform: uppercase;
     color: #E3B873;
     grid-column: span 2;
-
 }
 
 .headnav__menu {
-    padding-left: 8.1vw;
+    padding-left: 16.1%;
     grid-column: span 6;
 }
 
 .headnav__menu > li {
     display: inline-block;
-    font-size: 0.72vw;
-    padding-left: 3.63vw;
+    font-size: 69%;
+    padding-left: 8.8%;
 } 
 
 .headnav__menu > li:first-child {
-    padding-left: 0vw;
+    padding-left: 0%;
 }
 
 .headnav__menu-item {
@@ -62,21 +66,19 @@
 
 .headnav__menu-item:hover {
     color: #E3B873;
-
 }
 
 .headnav__phone {
-    padding-left: 6.5vw;
-    font-size: 0.72vw;
+    padding-left: 32%;
+    font-size: 69%;
     color: #E3B873;
     text-decoration: underline;
     grid-column: span 2;
-
 }
 
 .headnav__button{
-    width: 11.18vw;
-    height: 5.51vh;
+    width: 69%;
+    height: 46%;
     background: #E3B873;
     border: 0;
     border-radius: 2px;
@@ -84,12 +86,80 @@
 }
 
 .headnav__button_title {
-    font-size: 0.72vw;
+    font-size: 69%;
     font-style: italic;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+/* Fistblock */
+
+.fistblock {
+    background-size: 100vw;
+    height: 707px;
+    background-image: url("img/1_kitchen.jpg");
+    background-repeat: no-repeat;
+   
+    
+}
+
+.fistblock__items{
+    color: #fff;
+    padding-top: 13.8%;
+    padding-left: 8%;
+}
+
+.fistblock__title{
+    font-family: 'Yeseva One', serif;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+.fistblock__title__accent{
+    color: #E3B873;
+}
+
+.fistblock__text{
+    padding-top: 4.3vh;
+    line-height:163.7%;
+    font-size: 1.5vw;
+}
+
+.fistblock__buttons{
+ padding-top: 4vh;
+}
+
+.fistblock__fistbutton{
+color: #fff;
+/* max-height: 3.51vh; */
+width: 14.5vw;
+height: 8vh;
+background: #E3B873;
+border: 0;
+border-radius: 2px;
+margin-right: 1vw;
+font-size: 0.72vw;
+}
+
+.fistblock__secondbutton{
+color: #fff;
+/* max-height: 3.51vh; */
+width: 14.5vw;
+height: 8vh;
+border: 1;
+border-color: #fff;
+border-radius: 2px;
+background-color: rgba(255, 255, 255, 0);
+font-size: 0.72vw;
+}
+
+
+
+
+
+/* Media rules */
+
+
+@media screen and (max-width: 400px) {
 
     .headnav {
         display: grid;
@@ -107,7 +177,6 @@
         text-transform: uppercase;
         color: #E3B873;
         grid-column: span 2;
-    
     }
     
     .headnav__menu  {
@@ -121,11 +190,9 @@
         color: #fff;
         text-decoration: none;
         grid-column: span 2;
-    
     }
     
     .headnav__button{
         display: none;
     }
-    
 }
