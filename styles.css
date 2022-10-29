@@ -20,59 +20,121 @@
     font-family: 'Nunito Sans',Helvetica, Arial, sans-serif;
 }
 
-.haednav{
+/* @media screen and (max-width: 374px) {
+
+    .headnav {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr max-content 8.76vw max-content 7vw max-content 3.4vw min-content 1fr;
+        grid-template-rows: 12.1vh;
+        align-items: center;
+        background: #131313;
+        color: #fff;
+    }
+    
+    .headnav__name {
+        font-size: 0.69em;
+        text-transform: uppercase;
+        grid-column: 2 / 3;
+        color: #E3B873;
+    }
+    
+    .headnav__menu {
+        display: none;
+    }
+    
+    .headnav__menu > li {
+        display: none;
+    } 
+    
+    .headnav__menu > li:first-child {
+        display: none;
+    }
+    
+    .headnav__menu-item {
+        display: none;
+    }
+    
+    .headnav__menu-item:hover {
+        display: none;
+    }
+    
+    .headnav__phone {
+        font-size: 0.69em;
+        grid-column: 6 / 7;
+        color: #E3B873;
+        text-decoration: underline; 
+    }
+    
+    .headnav__button {
+        display: none;
+    }
+    
+    .headnav__button_title {
+        display: none;
+    }
+} */
+    
+
+
+.headnav {
     display: grid;
-    width: 100%;
-    grid-template-columns: 6.39vw max-content 8.76vw max-content 7vw max-content 3.4vw max-content 1fr;
+    width: 100vw;
+    /* grid-template-columns: 1fr max-content 8.76vw max-content 7vw max-content 3.4vw min-content 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) 0.97vw;
     grid-template-rows: 12.1vh;
     align-items: center;
     background: #131313;
     color: #fff;
 }
 
-.headname {
-    font-size: 0.69em;
+.headnav__name {
+    padding-left: 6.29vw;
+    font-size: 0.72vw;
     text-transform: uppercase;
-    grid-column: 2 / 3;
     color: #E3B873;
+    grid-column: span 2;
+
 }
 
-.headmenu {
+.headnav__menu {
+    padding-left: 9.7vw;
     display: inline;
-    grid-column: 4 / 5;
+    grid-column: span 6;
 }
 
-.headmenu > li {
+.headnav__menu > li {
     display: inline-block;
-    font-size: 0.69em;
+    font-size: 0.72vw;
     padding-left: 3.63vw;
 } 
 
-.headmenu > li:first-child {
+.headnav__menu > li:first-child {
     padding-left: 0vw;
 }
 
-.headmenu-item {
+.headnav__menu-item {
     text-decoration:none;
     color: #fff;
 }
 
-.headmenu-item:hover {
+.headnav__menu-item:hover {
     color: #E3B873;
 
 }
 
-.headphone {
-    font-size: 0.69em;
-    grid-column: 6 / 7;
+.headnav__phone {
+    padding-left: 6.5vw;
+    font-size: 0.72vw;
     color: #E3B873;
-    text-decoration: underline; 
+    text-decoration: underline;
+    grid-column: span 2;
+
 }
 
-.headbutton{
+.headnav__button{
     width: 11.18vw;
     height: 5.51vh;
-    grid-column: 8 / 9;
     text-align: center;
     display: flex;
     align-items: center;
@@ -80,10 +142,11 @@
     background: #E3B873;
     border: 0;
     border-radius: 2px;
+    grid-column: span 2;
 }
 
-.headbutton-name {
-    font-size: 0.86em;
+.headnav__button_title {
+    font-size: 0.72vw;
     font-style: italic;
     text-transform: uppercase;
 }
