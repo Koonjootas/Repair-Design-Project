@@ -22,6 +22,7 @@
 
 body {
     font-family: 'Nunito Sans',Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -416,12 +417,527 @@ padding-left: 4.5%;
     font-size: 112%;
     text-align: center;
     line-height: 200%;
+}
+
+.thirdblock__forms {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6%;
+    gap: 57px;
+    justify-content: center;
+    width: 820px;
+}
+
+.thirdblock__nameform__form {
+    display: grid;
+    width: 246px;
+}
+
+.thirdblock__nameform__form__input{
+    border: 0px solid #36363630;
+    border-bottom-width: 2px;
+    padding-bottom: 5%;
+}
+
+.thirdblock__nameform__form__input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.thirdblock__nameform__form__input::placeholder{
+    color: #363636;
+}
+
+.thirdblock__phoneform__form {
+    display: grid;
+    width: 246px;
+}
+
+.thirdblock__phoneform__form__input {
+    border: 0px solid #36363630;
+    border-bottom-width: 2px;
+    padding-bottom: 5%;
+}
+
+.thirdblock__phoneform__form__input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.thirdblock__phoneform__form__input::placeholder {
+    color: #363636;
+}
+
+.thirdblock__phoneform__form {
+    display: grid;
+}
+
+.thirdblock__form__label{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #36363650;
+}
+
+.thirdblock__buttom__buttom{
+    width: 214px;
+    height: 55px;
+    color: #fff;
+    background-color: #E3B873;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+
+
+.thirdblock__checkbox__real-checkbox {
+    width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.thirdblock__checkbox__custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    vertical-align: sub;
+    background-color: #E3B873;
+}
+
+.thirdblock__checkbox__custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("icons/checkbox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+    transition: 0.2s ease-in;
+}
+
+.thirdblock__checkbox__real-checkbox:checked + .thirdblock__checkbox__custom-checkbox::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* Fourth  block */
+
+.fourthblock{
+    margin-top: 8.5%;
+}
+
+.fourthblock__types_of_repair_img{
+    margin-top: 1%;
+}
+
+.fourthblock__types_of_repair{
+    display: grid;
+    grid-template-rows: 30px 30px;
+    justify-items: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', serif;
+    font-size: 115%;
+}
+
+.fourthblock__wrapper {
+    width: 100%;
+    margin-top: 3%;
 
 }
-      
-      
+
+.fourthblock__images{
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+    margin: 3% 97px 0% 97px;
+}
+
+ .fourthblock__images__item{
+    width: 550px;
+    height: 449.07px;
+    position: static;
+}
+
+.images_item1{
+    background-image: url("img/4,1_Redecorating.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.images_item2{
+    background-image: url("img/4,2_Overhaul.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.images_item3{
+    background-image: url("img/4,3_Designer Repair.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.fourthblock__lists{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,420px);
+    position: relative;
+    grid-gap:32px;
+    justify-items: center;
+    /* gap: 60px; */
+    padding: 0% 97px 0% 97px;
+    bottom: 134px;
+    
+}
+
+.fourthblock__lists__item{
+    width: 352px;
+    height: 306px;
+    list-style-position: inside;
+    background: #fff;
+    padding-left: 28px;
+    padding-top: 24px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.fourthblock__lists__item_title{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.fourthblock__lists__item li{
+    color: #36363650;
+}
+
+.fourthblock__titels{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,420px);
+    position: relative;
+    grid-gap:32px;
+    padding-left: 125px;
+    position: relative;
+    bottom: 163px;
+
+}
+
+.fourthblock__titels__item{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: #E3B873;
+    width: 243.2px;
+    height: 57.6px;
+    color: #fff;
+    text-transform:uppercase;
+    font-family: 'Yeseva One';
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-weight: bold;
+}
 
 
+/* Fifth block */
+
+.fifth_block{
+
+}
+
+.fifth_block_wrapper{
+    display: flex;
+    gap: 0px 147px ;
+    height: 773px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: static;
+}
+
+.fifth_block_list{
+    width: 749px;
+    height: 688px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/5 bg.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    gap: 93px;
+}
+
+.fifth_block_list_item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 52px 337px;
+    margin-left: 270px;
+    grid-gap: 20px;
+}
+
+.fifth_block_list_item_title{
+    font-size: 14px;
+}
+
+.fifth_block_list_item_number {
+    display: grid;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #E3B873;
+    border: 8px solid #FFFFFF;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+}
+
+.fifth_block_form{
+    display: grid;
+    grid-template-rows: repeat(6, 90px);
+    margin-top: 76px;
+    width: 535px;
+    height: 538px;
+    background: #131313;
+    color: #ffffff50;
+}
+
+.fifth_block_form_title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*  */
+
+
+.fifth_block__form_nameform {
+    display: grid;
+    width: 435px;
+    margin-top: 30px;
+    margin-left: 53px;
+    font-size: 13px;
+}
+
+.fifth_block__form__input{
+    border: 0px solid #ffffff15;
+    border-bottom-width: 2px;
+    padding-bottom: 9px;
+    background-color: #131313;
+    padding-top: 5px;
+}
+
+.fifth_block__form__input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.fifth_block__form__input::placeholder{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/*  */
+
+.fifth_block__form_phoneform {
+    display: grid;
+    width: 435px;
+    margin-top: 49px;
+    margin-left: 53px;
+    font-size: 13px;
+}
+
+.fifth_block__form__input{
+    border: 0px solid #ffffff15;
+    border-bottom-width: 2px;
+    padding-bottom: 9px;
+    background-color: #131313;
+    padding-top: 5px;
+}
+
+.fifth_block__form__input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.fifth_block__form__input::placeholder{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/*  */
+
+.fifth_block__form_email {
+    display: grid;
+    width: 435px;
+    margin-top: 58px;
+    margin-left: 53px;
+    font-size: 13px;
+}
+
+.fifth_block__form__input{
+    border: 0px solid #ffffff15;
+    border-bottom-width: 2px;
+    padding-bottom: 9px;
+    background-color: #131313;
+    padding-top: 5px;
+}
+
+.fifth_block__form__input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.fifth_block__form__input::placeholder{
+    color: #ffffff;
+    font-size: 14px;
+}
+    
+/*  */
+
+.fifth_block_form_checkbox{
+    margin-left: 56px;
+    margin-top: 36px;
+}
+
+.thirdblock__checkbox__real-checkbox {
+    width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.thirdblock__checkbox__custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    vertical-align: sub;
+    background-color: #E3B873;
+}
+
+.thirdblock__checkbox__custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url("icons/checkbox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+    transition: 0.2s ease-in;
+}
+
+.thirdblock__checkbox__real-checkbox:checked + .thirdblock__checkbox__custom-checkbox::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.tfifth_block__checkbox__label{
+    font-size: 14px;
+    color: #fff;
+}
+
+.fifth_block_form_buttom{
+    width: 227px;
+    height: 54px;
+    background-color:#E3B873;
+    margin-top: 8px;
+    margin-left: 265px;
+    color: #fff;
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.fifth_block_coins_wrapper{
+    display: grid;
+    width: 100%;
+    justify-items: end;
+    /* margin-right: 270px; */
+    position: relative;
+    bottom: 4.5%;
+    right: 17.5%;
+    
+}
+
+.fifth_block_coins{
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.fifth_block_coins_title{
+    font-size: 18px;
+    color: #E3B873;
+    margin-left: 26px;
+}
+
+/* Gallery block */
+
+.gallery_block_wrapper{
+    width: 100%;
+    height: 1086px;
+}
+
+.gallery_block_text{
+    height: 922px;
+    background-image: url("img/6_room.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gallery_block_text_title{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+
+
+.gallery_block_text_list li{
+    color: #fff;
+    font-size: 20px;
+    margin: 25px 0px 25px 0px;
+
+}
+
+
+
+
+      
 
 
 /* Media rules */
