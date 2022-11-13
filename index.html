@@ -59,7 +59,14 @@
                     </div>
                     <div class="secondblock__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction
                         <br> 
-                        market we have made happy more than 1000 families</div>
+                        market we have made happy more than 1000 families
+                    </div>
+                        <div class="secondblock__mobile_gallery">
+                            <div class="secondblock__mobile_gallery__arrows">
+                                <div class="secondblock__mobile_gallery__arrows__left"></div>
+                                <div class="secondblock__mobile_gallery__arrows__right"></div>
+                            </div>
+                        </div>
                     <div class="secondblock__items">
                         <div class="secondblock__items__item">
                             <h3 class="secondblock__items__title">City:</h3>
@@ -86,6 +93,10 @@
                         <a href="#"><div class="secondblock__slider__circle"></div></a>
                         <a href="#"><img src="icons\right arrow.svg" alt="right arrow"></a>
                     </div>
+                    <div class="mobile_secondblock__online_control">
+                        <h3 class="mobile_secondblock__online_control_title">online control</h3>
+                        <img src="icons\camera.svg" alt="camera" class="mobile_secondblock__online_control_img">
+                    </div>
                 </div>
                 <div class="secondblock__rightside">
                     <div class="secondblock__nav">
@@ -98,18 +109,24 @@
                     <div class="secondblock__images">
                         <img src="img\2_chairs.jpg" alt="Room" class="secondblock__images">
                     </div>
+                </div>
+                <div class="secondblock__online_control">
+                    <h3 class="secondblock__online_control_title">online control</h3>
+                    <img src="icons\camera.svg" alt="camera" class="secondblock__online_control_img">
+                </div>
             </div>
-            <div class="secondblock__online_control">
-                <h3 class="secondblock__online_control_title">online control</h3>
-                <img src="icons\camera.svg" alt="camera" class="secondblock__online_control_img">
-            </div>
-        </div>
-        </section>
+       </section>
         
         <!-- Video -->
 
         <div class="video_conteiner">
             <video class="video_conteiner__video" controls poster="img\3_video_preview.jpg">
+                <source src="video\city.mp4" type='video/mp4;'>
+                <source src="video\city.webm" type='video/webm;'>
+            </video>
+        </div>
+        <div class="video_conteiner_mobile">
+            <video class="video_conteiner__video_mobile" controls poster="img\16_mobile_video_preview.jpg">
                 <source src="video\city.mp4" type='video/mp4;'>
                 <source src="video\city.webm" type='video/webm;'>
             </video>
@@ -156,79 +173,71 @@
 
             <!-- Fourth  block-->
 
-            <section>
+             <section>
                 <div class="fourthblock">
                     <div class="fourthblock__types_of_repair">
                         <h3 class="fourthblock__types_of_repair_title">TYPES OF REPAIR</h3>
                         <img src="icons\tools.svg" alt="tools" class="fourthblock__types_of_repair_img">
                     </div>
-                    <div class="fourthblock__wrapper">
                         <div class="fourthblock__images">
                             <div class="fourthblock__images__item images_item1">
-                                <!-- <img src="img\4,1_Redecorating.jpg" alt="Redecorating"> -->
                             </div>
                             <div class="fourthblock__images__item images_item2">
-                                <!-- <img src="img\4,2_Overhaul.jpg" alt="Overhaul"> -->
                             </div>
                             <div class="fourthblock__images__item images_item3">
-                                <!-- <img src="img\4,3_Designer Repair.jpg" alt="Designer Repair"> -->
                             </div>
                         </div>
-                        <div class="fourthblock__wrapper__item">
-                        </div>
-                        <div class="fourthblock__wrapper__item"></div>
-                        <div class="fourthblock__wrapper__item"></div>
-                    </div>
-                    <div class="fourthblock__lists">
-                        <div class="fourthblock__lists__item">
-                            <ul><h3 class="fourthblock__lists__item_title">Redecorating</h3>
-                                <li>Dismantling of old coatings</li>
-                                    <li> Wallpapering</li>
-                                    <li>Painting walls and ceilings</li>
-                                    <li>Laying flooring</li>
-                                    <li>Replacing plumbing</li>
-                                    <li>Replacing sockets and switches</li>
-                                    <li>Replacing doors</li>
-                            </ul>
-                        </div>
-                        <div class="fourthblock__lists__item">
-                        <ul><h3 class="fourthblock__lists__item_title">Overhaul</h3>
-                            <li>Dismantling of old coatings</li>
-                                <li> Wallpapering</li>
-                                <li>Painting walls and ceilings</li>
-                                <li>Laying flooring</li>
-                                <li>Replacing plumbing</li>
-                                <li>Replacing sockets and switches</li>
-                                <li>Replacing doors</li>
-                        </ul>
-                        </div>
-                        <div class="fourthblock__lists__item">
-                            <ul><h3 class="fourthblock__lists__item_title">Designer Repair</h3>
-                                <li>Dismantling of old coatings</li>
-                                    <li> Wallpapering</li>
-                                    <li>Painting walls and ceilings</li>
-                                    <li>Laying flooring</li>
-                                    <li>Replacing plumbing</li>
-                                    <li>Replacing sockets and switches</li>
-                                    <li>Replacing doors</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="fourthblock__titels">
-                        <div class="fourthblock__titels__item">
-                            from 900 rub / m2
-                        </div>
-                        <div class="fourthblock__titels__item">
-                            from 1800 rub / m2
-                        </div>
-                        <div class="fourthblock__titels__item">
-                            from 4000 rub / m2
-                        </div>
-                    </div>
+                            <div class="fourthblock__lists">
+                                <div class="fourthblock__lists__item">
+                                    <ul><h3 class="fourthblock__lists__item_title">Redecorating</h3>
+                                        <li>Dismantling of old coatings</li>
+                                            <li> Wallpapering</li>
+                                            <li>Painting walls and ceilings</li>
+                                            <li>Laying flooring</li>
+                                            <li>Replacing plumbing</li>
+                                            <li>Replacing sockets and switches</li>
+                                            <li>Replacing doors</li>
+                                    </ul>
+                                </div>
+                                <div class="fourthblock__lists__item">
+                                <ul><h3 class="fourthblock__lists__item_title">Overhaul</h3>
+                                    <li>Dismantling of old coatings</li>
+                                        <li> Wallpapering</li>
+                                        <li>Painting walls and ceilings</li>
+                                        <li>Laying flooring</li>
+                                        <li>Replacing plumbing</li>
+                                        <li>Replacing sockets and switches</li>
+                                        <li>Replacing doors</li>
+                                </ul>
+                                </div>
+                                <div class="fourthblock__lists__item">
+                                    <ul><h3 class="fourthblock__lists__item_title">Designer Repair</h3>
+                                        <li>Dismantling of old coatings</li>
+                                            <li> Wallpapering</li>
+                                            <li>Painting walls and ceilings</li>
+                                            <li>Laying flooring</li>
+                                            <li>Replacing plumbing</li>
+                                            <li>Replacing sockets and switches</li>
+                                            <li>Replacing doors</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fourthblock__titels">
+                                <div class="fourthblock__titels__item">
+                                    from 900 rub / m2
+                                </div>
+                                <div class="fourthblock__titels__item">
+                                    from 1800 rub / m2
+                                </div>
+                                <div class="fourthblock__titels__item">
+                                    from 4000 rub / m2
+                                </div>
+                      </div>
                 </div>
+                </section>
 
                 <!-- Fifth block -->
-
+                <section>
                 <div class="fifth_block">
                     <div class="fifth_block_wrapper">
                         <div class="fifth_block_list">
@@ -295,6 +304,10 @@
                         </div>
                     </div>
                 </div>
+                </section>
+
+                <!-- gallery_block -->
+                <section>
                 <div class="gallery_block">
                     <div class="gallery_block_wrapper">
                         <div class="gallery_block_text">
@@ -319,21 +332,24 @@
                         <div class="gallery_block_images">
                             <div class="gallery_block_images_left_side">
                                 <div class="gallery_block_item1">
-                                    <!-- <img src="img\7_clock.jpg" alt="clock"> -->
                                 </div>
                                 <div class="gallery_block_item2">
-                                    <!-- <img src="img\8_tv.jpg" alt="sofa"> -->
                                 </div>
                             </div>
                             <div class="gallery_block_images_right_side">
                                 <div class="gallery_block_item3">
-                                    <!-- <img src="img\9_sofa.jpg" alt="tv"> -->
                                 </div>
                                 <div class="gallery_block_item4">
-                                    <!-- <img src="img\10_flower.jpg" alt="flower"> -->
+                                </div>
+                            </div>
+                            <div class="gallery_block__mobile_gallery">
+                                <div class="gallery_block__mobile_gallery__arrows">
+                                    <div class="gallery_block__mobile_gallery__arrows__left"></div>
+                                    <div class="gallery_block__mobile_gallery__arrows__right"></div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -522,7 +538,6 @@
                                 </div>
                             </div>
                             <div class="map_block__map">
-                                <img src="img\map.jpg" alt="map">
                             </div>
                         </div>
                     </div>
